@@ -1,0 +1,48 @@
+@import  "../../app.scss";
+
+.about {
+    @include flex;
+    width: 100vw;
+    height: 42.6vw;
+
+    .container {
+        @include flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    
+    .container h1 {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+        font-weight: 900;
+    }
+
+    .container h2 {
+        font-size: 1vw;
+        line-height: 1vw;
+    }
+
+    .text {
+        @include flex;
+        flex-direction: column;
+        gap: 1vw;
+        width: 50vw;
+        text-align: center;
+        font-size: 1.2vw;
+    }
+
+    .experiences {
+        @include flex;
+        gap: 20vw;
+        text-align: center;
+    }
+
+    .experiences h1 {
+        font-size: 3vw;
+    }
+
+    .experiences p {
+        font-size: 1vw;
+    }
+}
+
