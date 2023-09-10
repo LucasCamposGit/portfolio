@@ -11,6 +11,7 @@ export default function Contact() {
       emailjs.sendForm('service_22x1k0x', 'template_q6xlj9a', form.current, 'v_ig8eJD3GabxCFAs')
         .then((result) => {
             console.log(result.text);
+            alert("email sent successfuly");
         }, (error) => {
             console.log(error.text);
         });
