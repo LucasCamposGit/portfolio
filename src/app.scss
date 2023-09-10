@@ -9,16 +9,25 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     scroll-behavior: smooth;
+    outline: none;
 }
 
 $white: #fff;
 $black: #000222;
 $green: rgb(26, 182, 26);
+$grey: #444; 
 $lightgreen: lightgreen;
 $lightgreen-hover: rgb(183, 245, 183);
+$green-filter: invert(54%) sepia(66%) saturate(5803%) hue-rotate(94deg) brightness(115%) contrast(80%);
 
 @mixin flex{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid {
+    display: grid;
     justify-content: center;
     align-items: center;
 }

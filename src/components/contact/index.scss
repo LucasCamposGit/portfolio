@@ -1,0 +1,52 @@
+@import  "../../app.scss";
+
+
+.contact {
+
+    @include flex;
+    margin: 6vw 0;
+
+    .container {
+        @include flex;
+        flex-direction: column;
+
+  
+        form {
+            @include flex;
+            flex-direction: column;
+
+            label {
+                text-align: left;
+                width: 20vw;
+                margin-top: 1vw;
+                color: $grey;
+            }
+
+            input {
+                width: 20vw;
+                padding: 0.5vw;
+                border-radius: 0.2vw;
+                border: 0.1vw solid $green;
+            }
+
+            textarea{
+                width: 20vw;
+                margin-bottom: 1vw;
+                height: 20vw;
+                padding: 0.5vw;
+                border: 0.1vw solid $green;
+                border-radius: 0.2vw;
+            }
+
+            #btn {
+                background-color: $green;
+                color: $white;
+                cursor: pointer;
+            }
+
+            #btn:hover{
+                background-color: $lightgreen;
+            }
+        }
+    }
+}

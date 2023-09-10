@@ -1,1 +1,59 @@
 @import  "../../app.scss";
+
+
+.skills {
+
+    @include grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    width: 90vw;
+
+    .skill {
+        
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            @include grid;
+            grid-template-columns: 0.2fr 2fr 0.2fr;
+            gap: 1vw;
+            width: 40vw;
+            height: 6vw;
+            font-size: 2vw;
+            justify-content: left;
+            justify-items: left;
+            border-radius: 0.5vw;
+        }
+
+        h1 * {
+            pointer-events: none;
+        }
+
+        h1:hover {
+            background-color: $lightgreen-hover;
+            cursor: pointer;
+        }
+
+        h1 img {
+            width: 3vw;
+            filter: $green-filter;
+            transition: all 0.2s ;
+        }
+
+        .container-skills {
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            overflow: hidden;
+            transition: height 100ms;
+            height: 0px;
+        }
+
+        .container-skills li {
+            padding: 0.5vw 0;
+            border-bottom: 0.2vw solid $green ;
+        }
+
+    }
+
+}
